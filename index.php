@@ -14,16 +14,15 @@
 
 	<form method="POST" action="second.php">
   <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email" name="email" required>
-  </div>
-  <div class="form-group">
     <label for="pwd">Username:</label>
     <input type="text" class="form-control" id="username" name="username" required>
   </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="password" name="password" required>
+  </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
