@@ -1,20 +1,7 @@
 <?php
 
-	$dbHost = "localhost";
-	$dbUser = "root";
-	$dbPass = "";
-	$dbName = "ADMIN";
-
-
-
-	$conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
-
-	if($conn->connect_error){
-		echo "Something Went Wrong";
-	}else{
-		echo "Connection was successfull";
-	}
-
+	include("./dbConnect.php");
+	$conn = connect();
 	if(isset($_POST['password']) && isset($_POST['username'])){
 		if(!empty($_POST['password']) && $_POST['username']){
 			
